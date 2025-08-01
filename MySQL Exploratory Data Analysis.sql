@@ -1,4 +1,17 @@
- -- Exploratory Data Analysis 
+--Goal is to see how much did people got layoff by companies during the hight of the pandemic
+ 
+ -- 1.Identify the time period with the most layoffs and spot any major spikes.
+ -- 2.Analyze layoffs by company and country
+ -- Find which companies had the most layoffs and which countries were hit hardest.
+ -- 3.Identify complete workforce cuts (100% laid off)
+ -- Highlight companies that shut down completely or cut all staff.
+ -- 4.Measure layoffs over time (monthly and yearly)
+-- Track how layoffs evolved over months/years and calculate a rolling total.
+--  5.Explore layoffs by funding stage
+--  Understand whether early-stage or late-stage companies were more affected.
+ -- Spot top companies hit hardest by year
+-- 6. Rank the top 5 companies with the highest layoffs 
+ 
  
  SELECT *
  FROM layoffs_staging2; 
@@ -97,18 +110,7 @@ WITH Company_Year (Company, years, total_laid_off) AS
  WHERE Ranking <= 5
 ;
  
- 
- 
- 
- 
- 
- 
- 
- 
 
- 
- 
- 
  
  
  
